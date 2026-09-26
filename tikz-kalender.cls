@@ -7,7 +7,7 @@
 
 \setcounter{errorcontextlines}{100}
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
-\ProvidesClass{tikz-kalender}[2026/07/13 v0.7a Calendar class (RN)]
+\ProvidesClass{tikz-kalender}[2026/09/26 v0.7b Calendar class (RN)]
 
 \DeclareOption*{\OptionNotUsed}
 \ProcessOptions\relax
@@ -179,7 +179,7 @@
     \RN@setFont[\bfseries]{RN@monthFont}{167}%     10pt (a4)
   \fi
   \RN@setFont[\bfseries]{RN@titleFont}{666}%     40pt (a4)
-  \RN@setFont[\bfseries]{RN@yearFont}{1000}%     60pt (a4)
+  \RN@setFont[\bfseries]{calYearFont}{1000}%     60pt (a4)
   \RN@normalFont
   \settowidth\@tempdima{\RN@formatDayNb{99}\RN@formatDay{0}}%
   \RN@eventwidthL=\dimexpr\RN@daywidth-\@tempdima
